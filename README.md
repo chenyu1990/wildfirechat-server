@@ -1,5 +1,6 @@
 # wildfirechat-server-docker
 
+```
 docker run -d \
     --name chat-server \
     --hostname chat-server \
@@ -8,3 +9,4 @@ docker run -d \
     --restart on-failure \
     --log-opt max-size=100mb \
     chenyu1990/chat-server:1.0.0
+```
