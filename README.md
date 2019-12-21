@@ -9,7 +9,7 @@ docker run -d \
     --name chat-server \
     --hostname chat-server \
     -v /var/chat-server/config:/opt/wildfirechat/config \
-    -p 8000:80 -p 1883:1883 -p 8083:8083 -p 18080:18080 \
+    -p 80:80 -p 1883:1883 -p 8083:8083 -p 18080:18080 \
     --restart on-failure \
     --log-opt max-size=100mb \
     --network chat-network \
